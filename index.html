@@ -2,10 +2,24 @@
 <html>
 <head>
   <title>Normal Looking Page</title>
-  <!-- هذا يخبر Iframely بوجود oEmbed endpoint -->
+  
+  <!-- Open Graph — يجبر Iframely يعترف بالصفحة كـ rich content -->
+  <meta property="og:type" content="video.other">
+  <meta property="og:title" content="Test Embed">
+  <meta property="og:description" content="Testing embed">
+  <meta property="og:url" content="https://amerziko7070.github.io/poc/index.html">
+  <meta property="og:image" content="https://amerziko7070.github.io/poc/thumb.png">
+  
+  <!-- oEmbed Discovery -->
   <link rel="alternate" type="application/json+oembed" 
         href="https://amerziko7070.github.io/poc/oembed.json" 
         title="Test">
+
+  <!-- Twitter Card — يساعد Iframely على التعرف -->
+  <meta name="twitter:card" content="player">
+  <meta name="twitter:player" content="https://amerziko7070.github.io/poc/index.html">
+  <meta name="twitter:player:width" content="400">
+  <meta name="twitter:player:height" content="300">
 </head>
 <body><p>Normal content</p></body>
 </html>
