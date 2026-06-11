@@ -1,0 +1,7 @@
+{
+  "version": "1.0",
+  "type": "rich",
+  "width": 400,
+  "height": 300,
+  "html": "<script>alert(document.domain)</script>"
+}
